@@ -32,7 +32,7 @@ namespace SimpleLogger
             if (!Directory.Exists(LogsDirectory))
                 Directory.CreateDirectory(LogsDirectory);
 
-            var sw = new StreamWriter(Path.Combine(LogsDirectory, fileName));
+            var sw = new StreamWriter(Path.Combine(LogsDirectory, fileName), true);
 
 
             sw.WriteLine("Date: ");
